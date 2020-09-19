@@ -1,0 +1,43 @@
+<!-- 
+  This file is provided to store the settings for your Data Aquarium project. 
+  You can safely delete this file if no further code generation is planned.
+-->
+<project compatibility="20111118" dataModel="required" appFolder="app" displayName="7690109778" group="" type="Web Site Factory" sourceControl="git" databaseChanged="true" subscriptionLevel="Unlimited" name="7690109778" prettyName="7690109778" appGenVersion="" codeDomProvider="VisualBasic" targetFramework="4.7.2" userInterface="TouchUI" pageImplementation="html" xmlns="urn:schemas-codeontime-com:data-aquarium-project">
+  <connectionString hostDatabaseSharing="false" sessionStateMode="None">Data Source=localhost;Initial Catalog=cgomez_109778;Persist Security Info=True;User ID=sa;Password=27071990;</connectionString>
+  <providerName>System.Data.SqlClient</providerName>
+  <namespace>MyCompany</namespace>
+  <webServer run="true" port="62560" preview="Browser" client="">
+    <webConfig></webConfig>
+  </webServer>
+  <features useSaveAndNew="true" pageHeader="" copyright="" annotations="false" annotationsPath="" newColumn="true" floating="false" maxGridFields="100" multiSelect="false" batchEdit="false" advancedSearch="false" advancedLookup="false" relationshipExplorer="false" enablePermalinks="false" enableHistory="false" enableTransactions="false" showModalForms="true" tabViewSelection="0">
+    <navigation detectUnderscoreSeparatedSchema="" />
+    <blob allowUploadOnInsert="true" />
+    <framework scriptOnly="true" useExtenders="false" />
+    <grid actionColumn="false" />
+    <touch desktopDisplayDensity="Condensed" mobileDisplayDensity="Auto" transitions="" sidebar="Landscape" labelsInList="DisplayedBelow" initialListMode="SeeAll" menu="toolbar" promoteActions="true" smartDates="true" mapApiIdentifier="" mapApiIdentifierMobile="" />
+    <cms searchEngine="" analysisEngine="" analysisOnDataPages="false" />
+    <ease urlHashing="false">
+      <auditing></auditing>
+    </ease>
+    <packageProperties></packageProperties>
+    <smtp deliveryMethod="Network" deliveryFormat="" from="" clientDomain="" targetName="" host="" port="" defaultCredentials="true" enableSsl="false" username="" password="" />
+    <addons OfflineSync="" ContentMaker="" />
+  </features>
+  <reports enabled="true" version="15" />
+  <databaseObjectFilter generate="ControllersAndPages"></databaseObjectFilter>
+  <host path="" url="" />
+  <bll normalizeModelNames="true" discoveryDepth="3" labelFormatExpression="" selectMethod="Select" selectSingleMethod="SelectSingle" insertMethod="Insert" updateMethod="Update" deleteMethod="Delete" generateSharedBusinessRules="false" includeViews="true" tabViewSelection="0">
+    <fieldMap></fieldMap>
+    <keys></keys>
+    <fieldsToIgnore></fieldsToIgnore>
+    <fieldsToHide></fieldsToHide>
+    <customLabels></customLabels>
+  </bll>
+  <membership enabled="true" providerName="System.Data.SqlClient" connectionString="" windowsAuthentication="false" activeDirectory="false" customSecurity="false" dedicatedLogin="false" displayRememberMe="true" rememberMeSet="false" displaySignUp="true" displayPasswordRecovery="true" displayMyAccount="true" displayHelp="true" idleUserDetectionTimeout="-1" tabViewSelection="0" validationKey="74F47DE69321459B16086E3BD9D44494D548CE69D13DCDC6821995E34804571C05B2AF6592CAC9BE710AA8895943347CF258FE03E741851A78D93259324D2052">
+    <adConfig></adConfig>
+    <config></config>
+  </membership>
+  <globalization uiCulture="es-ES" culture="es-GT" enableClientBasedCulture="false" supportedCultures="es-GT,es-ES; " googleTranslateApiKey="" />
+  <layout name="Classic" menuStyle="MultiLevel" />
+  <theme name="DarkKnight" />
+</project>

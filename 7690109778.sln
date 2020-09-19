@@ -1,0 +1,14 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 16
+
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "7690109778", "app\", "71B4AAB6-1CB4-4C39-B591-BB55F3260D1F"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code On Time Items", "Code On Time Items", "{471E3445-DC56-4C4E-94A4-8E1F806D8529}"
+	ProjectSection(SolutionItems) = preProject
+		ClientLibrary.es-ES.txt = ClientLibrary.es-ES.txt
+		DataAquarium.Project.xml = DataAquarium.Project.xml
+		DataAquarium.Version.xml = DataAquarium.Version.xml
+		Sync.GRL163-cgomez.xml = Sync.GRL163-cgomez.xml
+	EndProjectSection
+EndProject

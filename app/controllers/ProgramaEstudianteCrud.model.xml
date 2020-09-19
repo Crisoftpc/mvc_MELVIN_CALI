@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="dbo" baseTable="ProgramaEstudiante" alias="ProgramaEstudiante" created="2020-09-18T19:02:15" modified="2020-09-18T19:02:25" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys>
+    <foreignKey id="TheIdPrograma" parentTableSchema="dbo" parentTableName="Programas" x="346" y="20">
+      <foreignKeyColumn columnName="IdPrograma" parentColumnName="IdPrograma" />
+    </foreignKey>
+    <foreignKey id="TheIdProgramaEstado" parentTableSchema="dbo" parentTableName="Estado" baseForeignKey="TheIdPrograma" x="633" y="20">
+      <foreignKeyColumn columnName="Estado" parentColumnName="Estado" />
+    </foreignKey>
+    <foreignKey id="TheIdEstudiante" parentTableSchema="dbo" parentTableName="Estudiantes" x="346" y="183">
+      <foreignKeyColumn columnName="IdEstudiante" parentColumnName="IdEstudiante" />
+    </foreignKey>
+    <foreignKey id="TheIdEstudianteEstado" parentTableSchema="dbo" parentTableName="Estado" baseForeignKey="TheIdEstudiante" x="889" y="20">
+      <foreignKeyColumn columnName="Estado" parentColumnName="Estado" />
+    </foreignKey>
+  </foreignKeys>
+  <columns>
+    <column name="IdProgramaEstudiante" fieldName="IDProgramaEstudiante" label="Id Programa Estudiante" />
+    <column name="IdPrograma" fieldName="IDPrograma" label="Id Programa" aliasColumnName="Nombre" aliasForeignKey="TheIdPrograma" />
+    <column name="Nombre" fieldName="TheIDProgramaNombre" label="Id Programa Nombre" foreignKey="TheIdPrograma" />
+    <column name="Nombre" fieldName="TheIDProgramaEstadoNombre" label="Id Programa Estado Nombre" foreignKey="TheIdProgramaEstado" />
+    <column name="IdEstudiante" fieldName="IDEstudiante" label="Id Estudiante" aliasColumnName="Nombre" aliasForeignKey="TheIdEstudiante" />
+    <column name="Nombre" fieldName="TheIDEstudianteNombre" label="Id Estudiante Nombre" foreignKey="TheIdEstudiante" />
+    <column name="Nombre" fieldName="TheIDEstudianteEstadoNombre" label="Id Estudiante Estado Nombre" foreignKey="TheIdEstudianteEstado" />
+  </columns>
+</dataModel>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="dbo" baseTable="ProgramaEstudiante" alias="ProgramaEstudiante" created="2020-09-18T18:55:06" modified="2020-09-18T18:58:50" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys>
+    <foreignKey id="TheIdPrograma" parentTableSchema="dbo" parentTableName="Programas" x="367" y="26">
+      <foreignKeyColumn columnName="IdPrograma" parentColumnName="IdPrograma" />
+    </foreignKey>
+    <foreignKey id="TheIdEstudiante" parentTableSchema="dbo" parentTableName="Estudiantes" x="358" y="165">
+      <foreignKeyColumn columnName="IdEstudiante" parentColumnName="IdEstudiante" />
+    </foreignKey>
+    <foreignKey id="ConsejeroPrograma" parentTableSchema="dbo" parentTableName="ConsejeroPrograma" x="347" y="340">
+      <foreignKeyColumn columnName="IdPrograma" parentColumnName="IdPrograma" />
+    </foreignKey>
+    <foreignKey id="Consejero" parentTableSchema="dbo" parentTableName="Consejero" x="683" y="20" baseForeignKey="ConsejeroPrograma">
+      <foreignKeyColumn columnName="IdConsejero" parentColumnName="IdConsejero" />
+    </foreignKey>
+  </foreignKeys>
+  <columns>
+    <column name="IdProgramaEstudiante" fieldName="IDProgramaEstudiante" label="Id Programa Estudiante" />
+    <column name="Nombre" fieldName="TheIDProgramaNombre" label="Id Programa Nombre" foreignKey="TheIdPrograma" />
+    <column name="IdEstudiante" fieldName="IDEstudiante" label="Id Estudiante" aliasColumnName="Nombre" aliasForeignKey="TheIdEstudiante" />
+    <column name="Nombre" fieldName="TheIDEstudianteNombre" label="Id Estudiante Nombre" foreignKey="TheIdEstudiante" />
+    <column name="Nombre" fieldName="ConsejeroNombre" label="Consejero Nombre" foreignKey="Consejero" />
+  </columns>
+</dataModel>

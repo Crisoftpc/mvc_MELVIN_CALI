@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="dbo" baseTable="ConsejeroPrograma" alias="ConsejeroPrograma" created="2020-09-18T18:04:54" modified="2020-09-18T18:04:57" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys>
+    <foreignKey id="TheIdConsejero" parentTableSchema="dbo" parentTableName="Consejero" x="343" y="20">
+      <foreignKeyColumn columnName="IdConsejero" parentColumnName="IdConsejero" />
+    </foreignKey>
+    <foreignKey id="TheIdConsejeroEstado" parentTableSchema="dbo" parentTableName="Estado" baseForeignKey="TheIdConsejero" x="626" y="20">
+      <foreignKeyColumn columnName="Estado" parentColumnName="Estado" />
+    </foreignKey>
+    <foreignKey id="TheIdPrograma" parentTableSchema="dbo" parentTableName="Programas" x="343" y="183">
+      <foreignKeyColumn columnName="IdPrograma" parentColumnName="IdPrograma" />
+    </foreignKey>
+    <foreignKey id="TheIdProgramaEstado" parentTableSchema="dbo" parentTableName="Estado" baseForeignKey="TheIdPrograma" x="883" y="20">
+      <foreignKeyColumn columnName="Estado" parentColumnName="Estado" />
+    </foreignKey>
+  </foreignKeys>
+  <columns>
+    <column name="IdConsejeroPrograma" fieldName="IDConsejeroPrograma" label="Id Consejero Programa" />
+    <column name="IdConsejero" fieldName="IDConsejero" label="Id Consejero" aliasColumnName="Nombre" aliasForeignKey="TheIdConsejero" />
+    <column name="Nombre" fieldName="TheIDConsejeroNombre" label="Id Consejero Nombre" foreignKey="TheIdConsejero" />
+    <column name="Nombre" fieldName="TheIDConsejeroEstadoNombre" label="Id Consejero Estado Nombre" foreignKey="TheIdConsejeroEstado" />
+    <column name="IdPrograma" fieldName="IDPrograma" label="Id Programa" aliasColumnName="Nombre" aliasForeignKey="TheIdPrograma" />
+    <column name="Nombre" fieldName="TheIDProgramaNombre" label="Id Programa Nombre" foreignKey="TheIdPrograma" />
+    <column name="Nombre" fieldName="TheIDProgramaEstadoNombre" label="Id Programa Estado Nombre" foreignKey="TheIdProgramaEstado" />
+  </columns>
+</dataModel>

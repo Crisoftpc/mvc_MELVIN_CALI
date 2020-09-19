@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="dbo" baseTable="Dormitorios" alias="Dormitorios" created="2020-09-18T18:04:25" modified="2020-09-18T18:04:28" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys>
+    <foreignKey id="TheEstado" parentTableSchema="dbo" parentTableName="Estado" x="310" y="20">
+      <foreignKeyColumn columnName="Estado" parentColumnName="Estado" />
+    </foreignKey>
+  </foreignKeys>
+  <columns>
+    <column name="IdDormitorio" fieldName="IDDormitorio" label="Id Dormitorio" />
+    <column name="Nombre" fieldName="Nombre" label="Nombre" />
+    <column name="Numero" fieldName="Numero" label="Numero" />
+    <column name="Estado" fieldName="Estado" label="Estado" aliasColumnName="Nombre" aliasForeignKey="TheEstado" />
+    <column name="Nombre" fieldName="TheEstadoNombre" label="Estado Nombre" foreignKey="TheEstado" />
+  </columns>
+</dataModel>

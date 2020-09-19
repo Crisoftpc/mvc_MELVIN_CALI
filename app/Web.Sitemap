@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode title="^SiteHome^Home^SiteHome^" description="" url="~/index.html">
+    <siteMapNode title="^HomePath^Home^HomePath^" description="^HomeDesc^Application home page^HomeDesc^" url="~/pages/home" cssClass="Wide" />
+    <siteMapNode title="Seleccionar Programa" description="View Programa Estudiante" url="~/pages/programa-estudiante" />
+    <siteMapNode title="Seleccionar Dormitorio" description="" url="~/pages/seleccionar-dormitorio" roles="*" />
+    <siteMapNode title="Mantenimiento Tablas" description="" url="~/pages/mantenimiento-tablas" roles="*">
+      <siteMapNode title="Dormitorios" description="View Dormitorios" url="~/pages/dormitorios" />
+      <siteMapNode title="Estudiantes" description="View Estudiantes" url="~/pages/estudiantes" />
+      <siteMapNode title="Consejero" description="View Consejero" url="~/pages/consejero" />
+      <siteMapNode title="Programas" description="View Programas" url="~/pages/programas" />
+      <siteMapNode title="Estado" description="View Estado" url="~/pages/estado" />
+      <siteMapNode title="Manejo usuarios" description="^MembershipDesc^User and role manager^MembershipDesc^" url="~/pages/sesiones" roles="Administrators" />
+      <siteMapNode title="Consejero programa" description="View Consejero Programa" url="~/pages/consejero-programa" />
+      <siteMapNode title="Programa Estudiante Crud" description="View Programa Estudiante Crud" url="~/pages/programa-estudiante-crud" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
